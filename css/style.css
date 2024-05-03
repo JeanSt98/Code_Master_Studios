@@ -162,7 +162,9 @@ h3 {
 
 }
 
-
+.producto__imagen{
+    margin-bottom: 7%;
+}
 
 .producto__imagen:hover {
     border-radius: 2rem;
