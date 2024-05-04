@@ -247,7 +247,7 @@ h3 {
 
     .nosotros__imagen{
         grid-row: 1/2;
-        width: 100%;
+        width: 102%;
         height: 100%;
     }
 
@@ -394,10 +394,9 @@ font-style: oblique;
 }
 @media (min-width: 768px){
     .formateo__imagen{
-        text-align: center;
-        margin: auto 15%;
+        margin: auto auto;
         border-style: solid;
-        height: 50rem;
+        height: 32rem;
         
     }
 }
