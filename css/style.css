@@ -237,11 +237,12 @@ h3 {
     @media (min-width: 768px){
         .nosotros {
             grid-template-columns: repeat(2, 1fr);
-            column-gap: 2rem;
+            column-gap: 10rem;
         }
+
     }
     .nosotros__contenido{
-        margin: 10% 5%;
+        margin: auto;
         text-align: center;
     }
 
