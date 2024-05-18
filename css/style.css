@@ -103,7 +103,7 @@ h3 {
 /* Navegacion */
 .navegacion {
     background-color: var(--negro);
-    padding: 1rem;
+    padding: 1rem 0;
     display: flex;
     justify-content: space-around;
     margin-right: -3%;
@@ -195,7 +195,7 @@ h3 {
 
 .producto__nombre,
 .producto__precio {
-    margin: 1rem 0rem;
+    margin: 1rem 0;
     line-height: 1.2;
     font-family: var(--fuentePrincipal);
 
@@ -203,7 +203,7 @@ h3 {
 
 /*Graficos*/
 .grafico {
-    min-height: 36.5rem;
+    min-height: 36rem;
     background-repeat: no-repeat;
     background-size: cover;
     grid-column: 1 / 3;
@@ -245,13 +245,12 @@ h3 {
     }
     .nosotros__contenido{
         margin: auto;
-        margin-right: -3%;
         text-align: center;
     }
 
     .nosotros__imagen{
         grid-row: 1/2;
-        width: 104%;
+        width: 102%;
         height: 100%;
     }
 
