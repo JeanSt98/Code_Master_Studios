@@ -115,7 +115,6 @@ h3 {
     font-family: var(--fuentePrincipal);
     color: var(--blanco);
     font-size: 3rem;
-    margin-right: 1rem;
 }
 
 .navegacion__enlace:last-of-type {
