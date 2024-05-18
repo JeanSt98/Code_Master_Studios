@@ -189,7 +189,7 @@ h3 {
 
 .producto__nombre {
     color: var(--negro);
-    font-size: 2.5rem;
+    font-size: 2.3rem;
 }
 @media (min-width: 768px){
     .producto__nombre {
