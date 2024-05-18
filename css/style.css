@@ -203,7 +203,7 @@ h3 {
 
 /*Graficos*/
 .grafico {
-    min-height: 36rem;
+    min-height: 36.5rem;
     background-repeat: no-repeat;
     background-size: cover;
     grid-column: 1 / 3;
