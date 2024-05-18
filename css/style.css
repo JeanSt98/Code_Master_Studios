@@ -51,7 +51,14 @@ img {
 
 .contenedor {
     max-width: 120rem;
-    margin: 0 auto;
+    margin-right: -3%;
+}
+@media (min-width: 768px){
+    .contenedor {
+        max-width: 120rem;
+        margin: 0 auto;
+    }
+    
 }
 
 h1,
