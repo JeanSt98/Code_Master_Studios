@@ -100,7 +100,7 @@ h3 {
     }
     
     .header__logo {
-        margin: auto 25%;
+        margin: auto;
         height: 10rem;
     
     
@@ -112,7 +112,7 @@ h3 {
     background-color: var(--negro);
     padding: 1rem 0rem;
     display: flex;
-    justify-content: space-evenly;
+     justify-content: space-evenly;
     /*gap: 2rem;/*Separacion forma nueva*/
 
 }
@@ -145,10 +145,10 @@ h3 {
 
     .navegacion {
         background-color: var(--negro);
-        padding: 1rem 0rem;
+        padding: 1rem;
         display: flex;
-        justify-content: space-around;
-        /*gap: 2rem;/*Separacion forma nueva*/
+        /* justify-content: space-around; */
+        /*gap: 3rem;/*Separacion forma nueva */
     
     }
 
