@@ -7,23 +7,45 @@
       name="google-site-verification"
       content="h6_ZWFQLN30XiaNcduH0wso1HGPwArIJJofM01j04Cw"
     />
-    <link rel="icon" href="img/Icons/favicon1.png" />
     <!--Codigo Icons Google-->
+    <link rel="icon" href="img/Icons/favicon1.png" />
+    <!--Fin del codigo de Iconos-->
+    <!-- Codigo Fonts -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-    <!--Fin del codigo de Iconos-->
+    <!-- Fin Codigo Fonts -->
+    <!-- Preload -->
+    <link rel="preload" href="css/normalize.css" as="style" />
     <link rel="stylesheet" href="css/normalize.css" />
-    <!--PEGAR CODIGO DE FONTS-->
+    <link rel="preload" href="css/style.css" as="style" />
     <link rel="stylesheet" href="css/style.css" />
+    <!-- Prefetch -->
+    <link rel="prefetch" href="producto.html" as="document" />
     <title>CodeMaster Studios</title>
   </head>
   <body>
     <header class="header">
-      <a href="index.html">
-        <img class="header__logo" src="img/Icons/favicon1.png" alt="Jean's branch" />
-      </a>
+      <picture >
+        <a href="index.html">
+          <source
+          class="header__logo"
+            loading="lazy"
+            srcset="img/Icons/favicon1.webp"
+            type="image/webp"
+            alt="Jean's branch"
+          />
+        </a>
+        <a href="index.html">
+          <img
+          class="header__logo"
+            loading="lazy"
+            src="img/Icons/favicon1.png"
+            alt="Jean's branch"
+          />
+        </a>
+      </picture>
     </header>
     <nav class="navegacion">
       <!--a*2 crea dos enlaces-->
@@ -48,11 +70,21 @@
           </p>
         </div>
         <a href="https://agenda17d06.site/">
-          <img
+          <picture>
+            <source
             class="nosotros__imagen"
-            src="img/Card.png"
-            alt="Our Services Software Development"
-          />
+              loading="lazy"
+              srcset="img/Card.webp"
+              alt="Our Services Software Development"
+              type="image/webp"
+            />
+            <img
+            class="nosotros__imagen"
+              loading="lazy"
+              src="img/Card.png"
+              alt="Our Services Software Development"
+            />
+          </picture>
         </a>
       </div>
       <!--Fin de la clase nosotros-->
@@ -61,13 +93,33 @@
       <h2 class="comprar__titulo">Our benefits</h2>
       <div class="bloques">
         <div class="bloque">
-          <img class="bloque__imagen" src="img/saving_money.jpg" alt="" />
+          <picture>
+            <source
+            class="bloque__imagen" 
+              loading="lazy"
+              srcset="img/saving_money.webp"
+              type="img/webp"
+              alt="Saving money"
+            />
+            <img 
+            class="bloque__imagen" loading="lazy" src="img/saving_money.jpg" alt="Saving money" />
+          </picture>
           <h3 class="bloque__titulo">The best price</h3>
           <p>I offer the most competitive pricing in the industry.</p>
         </div>
         <!--Bloque-->
         <div class="bloque">
-          <img class="bloque__imagen" src="img/No_Problem.jpg" alt="" />
+          <picture>
+            <source
+            class="bloque__imagen" 
+              loading="lazy"
+              srcset="img/No_Problem.webp"
+              type="image/webp"
+              alt="No problem"
+            />
+            <img 
+            class="bloque__imagen" loading="lazy" src="img/No_Problem.jpg" alt="No problem" />
+          </picture>
           <h3 class="bloque__titulo">No hassle</h3>
           <p>
             I assure you there will be no problems during the software
@@ -76,13 +128,41 @@
         </div>
         <!--Bloque-->
         <div class="bloque">
-          <img class="bloque__imagen" src="img/One_payment.jpg" alt="" />
+          <picture>
+            <source
+            class="bloque__imagen"
+              loading="lazy"
+              srcset="img/One_payment.webp"
+              type="image/webp"
+              alt="One Single Payment"
+            />
+            <img
+            class="bloque__imagen"
+              loading="lazy"
+              src="img/One_payment.jpg"
+              alt="One Single Payment"
+            />
+          </picture>
           <h3 class="bloque__titulo">Just one payment!</h3>
           <p>One single payment, with no further subscriptions required.</p>
         </div>
         <!--Bloque-->
         <div class="bloque">
-          <img class="bloque__imagen" src="img/Team_Viewer.png" alt="" />
+          <picture>
+            <source
+            class="bloque__imagen"
+              loading="lazy"
+              srcset="img/Team_Viewer.webp"
+              type="image/webp"
+              alt="Remote Installation"
+            />
+            <img
+            class="bloque__imagen"
+              loading="lazy"
+              src="img/Team_Viewer.png"
+              alt="Remote Installation"
+            />
+          </picture>
           <h3 class="bloque__titulo">Remote Installation</h3>
           <p>Software is installed remotely using specialised software.</p>
         </div>
@@ -94,5 +174,6 @@
     <footer class="footer">
       <p class="footer__texto">Codemaster Studio all rights reserved</p>
     </footer>
+    <script src="js/modernizer.js"></script>
   </body>
 </html>

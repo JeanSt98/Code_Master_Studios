@@ -90,8 +90,6 @@ h3 {
 .header__logo {
     margin: 0% 25%;
     height: 10rem;
-
-
 }
 
 
@@ -126,9 +124,7 @@ h3 {
     font-size: 3rem;
 }
 
-.navegacion__enlace:last-of-type {
-    
-}
+
 
 .navegacion__enlace--activo,
 .navegacion__enlace:hover {
