@@ -143,6 +143,15 @@ h3 {
         margin-top: 2rem;
     }
 
+    .navegacion {
+        background-color: var(--negro);
+        padding: 1rem 0rem;
+        display: flex;
+        justify-content: space-around;
+        /*gap: 2rem;/*Separacion forma nueva*/
+    
+    }
+
     .navegacion__enlace {
         font-family: var(--fuentePrincipal);
         color: var(--blanco);
