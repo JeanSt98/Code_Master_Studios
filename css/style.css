@@ -143,11 +143,7 @@ h3 {
         padding: 1rem 0;
         margin-top: 2rem;
     }
-    .footer_falso {
-        background-color: var(--negro);
-        padding: 1rem 0;
-        margin-top: 2rem;
-    }
+
 
     .navegacion {
         background-color: var(--negro);
