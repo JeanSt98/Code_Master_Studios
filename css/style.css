@@ -332,6 +332,12 @@ h3 {
         height: 20rem;
         margin: 0 30%;
     }
+    .office__contenido{
+        text-align: center;
+        font-size: 2.5rem;
+        font-family:'Times New Roman', Times, serif;
+    
+    }
 
 }
 .office__imagen{
