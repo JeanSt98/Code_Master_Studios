@@ -336,12 +336,12 @@ h3 {
 }
 .office__imagen{
     height: 20rem;
-    margin: 0 37%;
+    margin: 0% 25%;
 }
 .office__img{
-    height: 20rem;
-    margin: 0 15%;
+    margin: auto 22%;
 }
+
 .office__contenido{
     text-align: center;
     font-size: 2.5rem;
