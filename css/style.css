@@ -164,8 +164,8 @@ h3 {
 
 #whatsapp {
     position: fixed;
-    bottom: 0rem;
-    right: 0rem;
+    bottom: 24px;
+    right: 24px;
  }
  svg {
     width: 80px;
