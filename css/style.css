@@ -164,8 +164,16 @@ h3 {
 
 #whatsapp {
     position: fixed;
-    bottom: 50px;
-    right: 24px;
+    bottom: 25px;
+    right: 0px;
+ }
+
+ @media (min-width: 768px){
+    #whatsapp {
+        position: fixed;
+        bottom: 50px;
+        right: 24px;
+     }
  }
  svg {
     width: 80px;
@@ -194,7 +202,12 @@ h3 {
 
 }
 
+.producto__imagen_pc{
+    margin-bottom: 3%;
+    height: 6rem;
+}
 .producto__imagen{
+    height: 12rem;
     margin-bottom: 7%;
 }
 
@@ -206,9 +219,22 @@ h3 {
     transition: all .5s ease-in-out;
 }
 
+.producto__imagen_pc:hover {
+    border-radius: 2rem;
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+    filter: saturate(180%);
+    transition: all .5s ease-in-out;
+}
+
 @media (min-width: 768px) {
     .producto__imagen{
         margin-bottom: 3%;
+        height: 15rem;
+    }
+    .producto__imagen_pc{
+        margin-bottom: 3%;
+        height: 15rem;
     }
 }
 
@@ -247,23 +273,28 @@ h3 {
 
 .grafico--adobe {
     grid-row: 2;
-    background-image: url(../img/Card_Improved.png);
+    background-image: url(../img/CodeMasterStudio.png);
+    
 }
 
 .grafico--word {
-    background-image: url(../img/Card_Improved.png);
+    background-image: url(../img/Jean_Solano.png);
     grid-row: 4;
+    min-height: 20rem;
 }
 
 @media (min-width: 768px) {
     .grafico--word {
-        grid-row: 4;
         grid-column: 2;
+        grid-row: 4;
+        min-height: 31rem;
     }
 
     .grafico--adobe {
         grid-row: 1;
     }
+
+    
 }
 
     /*Codigo About Us*/
@@ -339,6 +370,13 @@ h3 {
     
     }
 
+    .software__contenido{
+        text-align: center;
+        font-size: 2.0rem;
+        font-family:'Times New Roman', Times, serif;
+    
+    }
+
 }
 .office__imagen{
     height: 20rem;
@@ -351,6 +389,13 @@ h3 {
 
 .office__contenido{
     text-align: center;
+    font-size: 2.5rem;
+    font-family:'Times New Roman', Times, serif;
+
+}
+
+.software__contenido{
+    text-align: left;
     font-size: 2.5rem;
     font-family:'Times New Roman', Times, serif;
 
@@ -425,6 +470,7 @@ h3 {
 .formateo__contenido,.falso__contenido{
 text-align: left;
 font-style: oblique;
+font-size: 2rem;
 
 }
 .formateo__imagen{
@@ -432,6 +478,12 @@ font-style: oblique;
     margin: auto auto;
     border-style: solid;
     height: 29rem;
+}
+
+.formateo__pc{
+    border-style: solid;
+    height: 29.6rem;
+    margin: auto;
 }
 .advice{
     font-family: Arial, Helvetica, sans-serif;
@@ -445,10 +497,94 @@ font-style: oblique;
         height: 32rem;
         
     }
+
+
 }
 .falso__imagen{
     text-align: center;
     margin: auto auto;
     border-style: solid;
     width: 30rem;
+}
+
+/*Codigo de Slider*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.slider ul {
+    display: flex;
+    animation: cambio 20s infinite alternate linear;
+    width: 400%;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
+
+}
+
+.button {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--negro);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    /* margin-top: 1rem; */
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: .5rem;
+    width: 70%;
+    text-align: center;
+    border: none;
+    margin: auto;
 }
