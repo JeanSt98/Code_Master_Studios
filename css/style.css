@@ -57,6 +57,7 @@ img {
 }
 
 .contenedor {
+    padding-top: 1%;
     max-width: 120rem;
     margin: auto;
 }
@@ -162,6 +163,17 @@ h3 {
     
 }
 
+
+@media (min-width: 768px){
+    .right{
+        margin-left: 78%;
+    }
+    #sortOptions{
+        float: right;
+    }
+    
+}
+
 #whatsapp {
     position: fixed;
     bottom: 25px;
@@ -199,6 +211,7 @@ h3 {
 /*Productos*/
 .producto {
     background-color: var(--blanco);
+    margin: auto;
 
 }
 
@@ -214,7 +227,7 @@ h3 {
 .producto__imagen:hover {
     border-radius: 2rem;
     -webkit-transform: scale(1.4);
-    transform: scale(1.4);
+    transform: scale(1.099);
     filter: saturate(180%);
     transition: all .5s ease-in-out;
 }
@@ -222,7 +235,7 @@ h3 {
 .producto__imagen_pc:hover {
     border-radius: 2rem;
     -webkit-transform: scale(1.4);
-    transform: scale(1.4);
+    transform: scale(1.099);
     filter: saturate(180%);
     transition: all .5s ease-in-out;
 }
@@ -274,13 +287,13 @@ h3 {
 .grafico--adobe {
     grid-row: 2;
     background-image: url(../img/CodeMasterStudio.png);
-    
+    min-height: 40rem;
 }
 
 .grafico--word {
     background-image: url(../img/Jean_Solano.png);
     grid-row: 4;
-    min-height: 20rem;
+    min-height: 27rem;
 }
 
 @media (min-width: 768px) {
@@ -292,6 +305,7 @@ h3 {
 
     .grafico--adobe {
         grid-row: 1;
+        min-height: 45rem;
     }
 
     
@@ -497,6 +511,7 @@ font-size: 2rem;
         height: 32rem;
         
     }
+    
 
 
 }
