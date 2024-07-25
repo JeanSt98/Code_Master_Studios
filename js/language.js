@@ -17,9 +17,9 @@ document.addEventListener("DOMContentLoaded", function (e) {
   
       if (selectedOption === "asc") {
         // Sort by product name (ascending)
-        const nameA = a.querySelector(".producto__nombre").textContent.toLowerCase(); // Get name, convert to lowercase for case-insensitive sorting
-        const nameB = b.querySelector(".producto__nombre").textContent.toLowerCase();
-        comparisonValue = nameA.localeCompare(nameB); // Use localeCompare for proper letter sorting
+        const priceB = parseFloat(b.querySelector(".producto__precio").dataset.price);
+        const priceA = parseFloat(a.querySelector(".producto__precio").dataset.price);
+        comparisonValue = priceA - priceB;
       } else if (selectedOption === "desc") {
         // Sort by price (descending)
         const priceA = parseFloat(a.querySelector(".producto__precio").dataset.price);
