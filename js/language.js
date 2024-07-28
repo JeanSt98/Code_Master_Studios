@@ -1,8 +1,18 @@
-document.addEventListener("DOMContentLoaded", function (e) {
-    ConveyThis_Initializer.init({
-      api_key: "pub_b65164c1a6cf3c91ec570d194dcf4f8f",
+require('dotenv').config();
+const apiKey = process.env.CONVEY_THIS_API_KEY;
+
+document.addEventListener("DOMContentLoaded", function() {
+  const script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.text = `
+    ConveyThis.init({
+      api_key: "${apiKey}",
+      // otras configuraciones...
     });
-  });
+  `;
+  document.head.appendChild(script);
+});
+
 // Order Products
   const sortOptions = document.getElementById("sortOptions");
   const productList = document.getElementById("productList");
