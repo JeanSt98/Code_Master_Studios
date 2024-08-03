@@ -1,17 +1,8 @@
-require('dotenv').config();
-
 document.addEventListener("DOMContentLoaded", function (e) {
-  const apiKey = process.env.CONVEY_THIS_API_KEY;
-
-  if (!apiKey) {
-    console.error('API key is missing. Please set CONVEY_THIS_API_KEY in your environment variables.');
-    return;
-  }
-
-  ConveyThis_Initializer.init({
-    api_key: apiKey,
+    ConveyThis_Initializer.init({
+      api_key: process.env.CONVEY_THIS_API_KEY,
+    });
   });
-});
 // Order Products
   const sortOptions = document.getElementById("sortOptions");
   const productList = document.getElementById("productList");
