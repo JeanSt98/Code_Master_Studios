@@ -166,10 +166,10 @@ h3 {
 
 @media (min-width: 768px){
     .right{
-        margin-left: 75%;
+        margin-left: 80%;
     }
     #sortOptions{
-        float: right;
+        margin-left: 80%;
     }
     
 }
